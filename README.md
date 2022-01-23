@@ -37,6 +37,34 @@ Crie uma página para que a pessoa usuária se identifique, com email e senha. E
   - Salve o email no estado da aplicação, com a chave email, assim que o usuário logar
   - A rota deve ser mudada para "/carteira" após o clique no botão
 
+## Página da Carteira
+
+Crie uma página para gerenciar a carteira de gastos em diversas moedas, e que traga a despesa total em real que é representado pelo código 'BRL'. Esta página deve ser renderizada por um componente chamado ***Wallet***.
 
 
+  #### 2. Crie um header para a página de carteira contendo as seguintes características:
+
+  * Um elemento que exiba o email da pessoa usuária que fez login.
+
+    * Adicione o atributo `data-testid="email-field"`.
+
+  ```
+  Dica: você deve pegar o email do estado global da aplicação (context)
+  ```
+
+  * Um elemento com a despesa total gerada pela lista de gastos.
+
+    * Adicione o atributo `data-testid="total-field"`.
+
+    * Inicialmente esse elemento deve exibir o valor `0`
+
+  * Um elemento que mostre qual câmbio está sendo utilizado, que será neste caso será 'BRL'.
+
+    * Adicione o atributo `data-testid="header-currency-field"`.
+  
+**O que será verificado:**
+
+  - Um elemento que exiba o email do usuário que fez login.
+  - Crie um elemento com a despesa total gerada pela lista de gastos.
+  - Crie um elemento que mostre que qual câmbio está sendo utilizado, que será neste caso "BRL"
 

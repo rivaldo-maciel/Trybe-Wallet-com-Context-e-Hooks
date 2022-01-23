@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 
-describe('Tests da page Login', () => {
+describe('Testes da page Login', () => {
   test('verifica `/` é a rota da página', () => {
     const { history }  = renderWithRouter(<App />);
     const { pathname } = history.location;
